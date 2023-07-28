@@ -1,7 +1,8 @@
 # ShirtCraft
 ShirtCraft  is an innovative SaaS project that lets users design their custom t-shirts with a variety of patterns and colors. Import local designs and unleash your creativity! 🎨👕
 <hr>
-more on vite here -> [vite in 100 sec](https://www.youtube.com/watch?v=KCrXgy8qtjM)
+
+More on vite here > [vite in 100 sec](https://www.youtube.com/watch?v=KCrXgy8qtjM)
 
 Vite is a JavaScript build tool that makes it faster and easier to build web applications. It's similar to tools like Webpack, but relies on modern browser features like ES Modules to simplify and speed-up the build process. 
 <hr>
