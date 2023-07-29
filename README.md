@@ -26,9 +26,7 @@ ee/drei -> 3D threeJS library for 3D rendering over the screen (react render for
 `<group>`
 This line creates a `<group>` element. In Three.js, a group is an object that can contain other objects, allowing you to group multiple meshes or objects together and manipulate them as a single unit. It's a way to organize and manage objects in a scene.
 
-jsx
-Copy code
-
+```
 <mesh
     castShadow
     geometry={nodes.T_Shirt_male.geometry}
@@ -36,6 +34,7 @@ Copy code
     material-roughness={1}
     dispose={null}>
 </mesh>
+```
 
 This block of code creates a `<mesh>` element, which represents a 3D object with geometry (shape) and material (appearance). Let's break down the attributes:
 
