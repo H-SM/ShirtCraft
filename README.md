@@ -52,7 +52,7 @@ Overall, this code creates a group that contains a single mesh representing a T-
 
 <hr> 
 
-### Dependencies for client side
+### Dependencies for server side
 - npm install cloudinary 
 - npm install cors 
 - npm install dotenv 
