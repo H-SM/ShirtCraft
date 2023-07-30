@@ -33,12 +33,24 @@ const Customizer = () => {
       case "filepicker": 
         return <FilePicker file={file} setFile={setFile} readFile={readFile}/>
       case "aipicker": 
-        return <AIPicker/>
+        return <AIPicker prompt={prompt} setPrompt={setPrompt} generatingImg={generatingImg} handleSubmit={handleSubmit}/>
       default:
         return null;
     }
   } 
   
+  const handleSubmit = async (type) => {
+    if(!prompt)return alert("Please enter your Prompt!");
+
+    try{
+      //call our backend to generate an AI image!
+    }catch(e){
+      alert(e.message);
+    } finally {
+       setGeneratingImg(false);
+       setActiveEditorTab("");
+    }
+  }
   const handleDecals = (type, result) => {
     // type -> logo OR full texture
     const decalType = DecalTypes[type];
@@ -62,6 +74,17 @@ const Customizer = () => {
         state.isFullTexture = false;
         break;
     }
+
+    //after setting the state, we need to update activeFilterTab to update the UI
+
+    setActiveFilterTab((prevState) =>{
+      return {
+        ...prevState,
+        [tabName]: !prevState[tabName]
+        //toggle the state
+      }
+    } )
+
   }
   const readFile =  (type) => { 
     reader(file)
@@ -103,8 +126,8 @@ const Customizer = () => {
                     key={tab.name}
                     tab={tab}
                     isFilterTab
-                    isActiveTab=""
-                    handleClick={() => {}}
+                    isActiveTab={activeFilterTab[tab.name]}
+                    handleClick={() => handleActiveFilterTab(tab.name)}
                   />
                 ))}
           </motion.div>

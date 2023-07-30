@@ -52,4 +52,11 @@ Overall, this code creates a group that contains a single mesh representing a T-
 
 <hr> 
 
-tbh...
+### Dependencies for client side
+- npm install cloudinary 
+- npm install cors 
+- npm install dotenv 
+- npm install express 
+- npm install mongoose 
+- npm install nodemon     
+- npm install openai     

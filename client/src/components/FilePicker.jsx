@@ -32,7 +32,6 @@ const FilePicker = ({file, setFile, readFile}) => {
         handleClick={() => readFile('full')}
         customStyle="text-md"
         />
-
       </div>
     </div>
   )
