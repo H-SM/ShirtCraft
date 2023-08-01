@@ -15,4 +15,4 @@ app.get("/", (req,res) => {
     res.status(200).json({message : "hello JI!!"})
 })
 
-app.listen(1234, () => console.log("server is HERE!! : 1234"));
+app.listen(8080, () => console.log("server is HERE!! : 8080"));
