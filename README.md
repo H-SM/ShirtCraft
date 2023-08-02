@@ -51,7 +51,7 @@ This block of code creates a `<mesh>` element, which represents a 3D object with
 Overall, this code creates a group that contains a single mesh representing a T-shirt object in the scene. The T-shirt mesh has specific material properties, casts shadows, and has a roughness value set to 1.
 
 <hr> 
-
+ 
 ### Dependencies for server side
 - npm install cloudinary 
 - npm install cors 
